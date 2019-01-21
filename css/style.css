@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Cairo-Regular";
+    src: url("Cairo-Regular.ttf"); }
+  
+  @font-face {
+    font-family: "Cairo-Bold";
+    src: url("Cairo-Bold.ttf");
+    font-weight: bold; }
+  
+  @font-face {
+    font-family: "Cairo-SemiBold";
+    src: url("Cairo-SemiBold.ttf"); }
+    #connect p{
+        font-size: 2rem;
+        font-family: Cairo-semiBold;
+        color: #41281b;
+    }
+    #connect{
+        box-shadow: 0px 7px 19px rgba(100, 100, 100, 0.3);
+    }
+body {
+    font-family: "Cairo-Regular"!important;
+    background: url('../img/bg-1.png');
+    text-align: right;
+}
+/* input::placeholder{
+    padding-right: 0.5rem;
+} */
+input{
+    border: 2px solid #4c9374;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+button#imagess{
+    margin-left: 1rem;
+    background: transparent;
+    border: 2px solid #4c9374;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 4px;
+}
+button#linkss{
+    margin-left: 2rem;
+    background: transparent;
+    border: 2px solid #4c9374;
+    border-radius: 4px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+button#linkss i, button#imagess i{
+    color: #4c9374;
+}
+.modal{
+    overflow: hidden!important;
+}
+p{
+    font-family: Cairo-semiBold;
+}
+.contain{
+    margin-bottom:1.5rem;
+}
+#butnNav button {
+    background-color: #4c9374;
+    color: #fff !important;
+    border: 2px solid #ECECEC;
+    padding: 5px 17px;
+    border-radius: 2px;
+    border-color: #4c9374;
+}
+.overlay{
+    opacity:0;
+    background-color: #060606a6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #4c9374;
+    transition: all 0.4s ease-in-out 0s;
+
+}
+
+.ii:hover{
+    opacity:0.5;
+}
+.overlay:hover{
+    opacity:1;
+   
+}
+
+
+#pdfs a{
+    color: #4e372b;
+}
+#pdfs button{
+    background: #4c9374;
+    border: 0;
+    transition: all ease-in-out 300ms;
+    color: white;
+    padding: 10px 8px;
+    box-shadow: 0px 20px 10px -10px rgba(0,0,0,0.5);
+    border-radius: 2px;
+}
+#pdfs button:hover{
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px) scale(1.1)
+}
+#pdfs img{
+    /* border: 5px solid #4c9374; */
+}
+
+#about h3 {
+    text-align: center;
+    background-color: #4c9374;
+    color: #FFF;
+    font-family: "AraHamah1964B-Bold";
+    font-size: 36px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+
+
+        /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: initial; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+ 
+}
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 6px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+
+
+@media (max-width: 360px){
+    #logo_img{
+        width:20rem;
+    }
+    #butnNav button {
+        padding: 5px 12px!important;
+    }
+}
